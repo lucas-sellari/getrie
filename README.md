@@ -1,1 +1,2 @@
-Cloine da gatry apenas para treinar conceitos do React :)
+Clone da gatry apenas para treinar conceitos do React :)
+Teste de merge
