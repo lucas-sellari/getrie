@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { SwapSpinner } from "react-spinners-kit";
-import axios from "axios";
+import useApi from "components/utils/useApi.js";
 import "./Form.css";
 
 const initialValue = {
@@ -15,19 +15,31 @@ const PromotionForm = ({ id }) => {
   const [values, setValues] = useState(id ? null : initialValue);
   const navigate = useNavigate();
 
+  const [load] = useApi({
+    url: `/promotions/${id}`,
+    method: "get",
+    onCompleted: (response) => {
+      setValues(response.data);
+    },
+  });
+
+  const [update, updateInfo] = useApi({
+    url: id ? `/promotions/${id}` : "/promotions",
+    method: id ? "put" : "post",
+    //data: values,
+    onCompleted: (response) => {
+      if (!response.error) {
+        navigate("/");
+      }
+    },
+  });
+
   useEffect(() => {
     if (id) {
       //edição...
-      axios
-        .get(`http://localhost:3333/promotions/${id}`)
-        .then((response) => {
-          setValues(response.data);
-        })
-        .catch((error) => {
-          console.log(error.toJSON());
-        });
+      load();
     }
-  }, []);
+  }, [id]);
 
   const onChange = (event) => {
     const { name, value } = event.target;
@@ -38,18 +50,9 @@ const PromotionForm = ({ id }) => {
 
   const onSubmit = (event) => {
     event.preventDefault();
-    const method = id ? "put" : "post";
-    const url = id
-      ? `http://localhost:3333/promotions/${id}`
-      : "http://localhost:3333/promotions";
-
-    axios[method](url, values)
-      .then((response) => {
-        navigate("/");
-      })
-      .catch((error) => {
-        console.log(error.toJSON());
-      });
+    update({
+      data: values,
+    });
   };
 
   return (
@@ -117,6 +120,18 @@ const PromotionForm = ({ id }) => {
           <div>
             <button type="submit">Salvar</button>
           </div>
+          {updateInfo.loading && (
+            <span
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                marginTop: "20px",
+                color: "#888",
+              }}
+            >
+              <h1>Salvando dados... 🤗</h1>
+            </span>
+          )}
         </form>
       )}
     </div>
