@@ -45,4 +45,13 @@
     color: #3498db;
     text-decoration: none;
     padding: 8px 10px;
+    margin-right: 15px;
+}
+
+.promotion-card__edit {
+    border: 1px solid #3498db;
+    border-radius: 4px;
+    color: #3498db;
+    text-decoration: none;
+    padding: 8px 10px;
 }
