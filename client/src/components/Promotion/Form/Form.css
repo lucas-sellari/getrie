@@ -1,0 +1,31 @@
+.promotion-form__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;   
+}
+
+.promotion-form__group label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+}
+
+.promotion-form__group input {
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    background-color: #fff;
+    height: 36px;
+    padding: 0 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
