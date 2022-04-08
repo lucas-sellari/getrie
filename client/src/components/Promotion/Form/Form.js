@@ -36,9 +36,9 @@ const PromotionForm = ({ id }) => {
 
   useEffect(() => {
     if (id) {
-      //edição...
       load();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   const onChange = (event) => {
