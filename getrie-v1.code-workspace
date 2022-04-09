@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "client"
+		},
+		{
+			"path": "mock-api"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
