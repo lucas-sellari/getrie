@@ -29,7 +29,7 @@
       "url": "https://www.iplace.com.br/fone-ouvido-run-xt-logitech-jaybird-985-000891/212247"
     },
     {
-      "title": "MacBook Air 13\" Apple M1 (8GB 256GB SSD) Cinza Espacial teste",
+      "title": "MacBook Air 13\" Apple M1 (8GB 256GB SSD) Cinza Espacial",
       "price": "8601.84",
       "imageUrl": "https://images-americanas.b2w.io/produtos/01/00/img/2545080/5/2545080531_1GG.jpg",
       "url": "https://www.americanas.com.br/produto/2545080485?=&utm_medium=afiliados&utm_source=aflb2w&utm_campaign=marca%3Aacom%3Bmidia%3Aafiliados%3Bformato%3A00%3Bsubformato%3A00%3Bidcampanha%3Aacom%3Bfranq%3A22193_1649319982_80b8043e5b614c41a24a52b1bb58e30b&utm_content=22193_1649319982_80b8043e5b614c41a24a52b1bb58e30b&epar=AF_00_00_AB_ACOM&opn=AFLACOM&franq=22193_1649319982_80b8043e5b614c41a24a52b1bb58e30b&WT.srch=1&voltagem=BIVOLT",
@@ -47,12 +47,74 @@
     {
       "id": 1,
       "comment": "TELA HD",
-      "promotionId": 1
+      "promotionId": 1,
+      "userId": 1
     },
     {
       "id": 2,
       "comment": "de R$ 599,90 \n por R$246,05 à vista \n (5% de desconto) \n ou R$ 259,00 em 5x de R$ 51,80 sem juros",
-      "promotionId": 2
+      "promotionId": 2,
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "comment": "Muito caro ainda :(",
+      "promotionId": 5,
+      "userId": 1
+    },
+    {
+      "userId": 1,
+      "promotionId": 6,
+      "comment": "Será que vale a pena?",
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "promotionId": 6,
+      "comment": "Acho que vou comprar kkkkkk",
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "promotionId": 2,
+      "comment": "Vou comprar para mainha",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "promotionId": 3,
+      "comment": "Puts nem de graça kkkk",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "promotionId": 4,
+      "comment": "Serase",
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "promotionId": 1,
+      "comment": "Maior e melhor",
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "promotionId": 1,
+      "comment": "",
+      "id": 10
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Lucas",
+      "avatarUrl": "https://preview.redd.it/ntcrnbcb13u41.jpg?auto=webp&s=2fa6d27f79f166eb070892ec29db658a8ff6df2b"
+    },
+    {
+      "id": 2,
+      "name": "Pérola",
+      "avatarUrl": "https://64.media.tumblr.com/ad6ab55e379cdfc82b150262857f2c13/955acdc060c33855-ca/s400x600/a7bc30bf814fb998f4245ed06e8a48a7470eda93.jpg"
     }
   ]
 }
