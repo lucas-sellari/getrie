@@ -13,8 +13,6 @@ const useApi = (config) => {
   const debouncedAxios = useDebouncedPromise(axios, config.debounceDelay);
 
   const call = async (localConfig) => {
-    setRequestInfo({ ...initialRequestInfo, loading: true });
-
     let response = null;
 
     const finalConfig = {
@@ -22,6 +20,13 @@ const useApi = (config) => {
       ...config,
       ...localConfig,
     };
+
+    if (!finalConfig.quietly) {
+      setRequestInfo({
+        ...initialRequestInfo,
+        loading: true,
+      });
+    }
 
     const fn = finalConfig.debounced ? debouncedAxios : axios;
 
