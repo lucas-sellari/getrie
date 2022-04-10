@@ -103,6 +103,82 @@
       "promotionId": 1,
       "comment": "",
       "id": 10
+    },
+    {
+      "userId": 1,
+      "promotionId": 6,
+      "comment": "Acho que não, hein",
+      "parentId": 4,
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "promotionId": 6,
+      "comment": "Bora deixar mais complexo kkkkkkkkk",
+      "parentId": 11,
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "promotionId": 6,
+      "comment": "Também vou",
+      "parentId": 5,
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "promotionId": 6,
+      "comment": "amoo",
+      "parentId": 11,
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "promotionId": 2,
+      "comment": "takaro ainda",
+      "parentId": 2,
+      "id": 15
+    },
+    {
+      "userId": 1,
+      "promotionId": 3,
+      "comment": "Muito feio",
+      "parentId": 7,
+      "id": 16
+    },
+    {
+      "userId": 1,
+      "promotionId": 4,
+      "comment": "Nova resposta",
+      "parentId": 8,
+      "id": 17
+    },
+    {
+      "userId": 1,
+      "promotionId": 4,
+      "comment": "test",
+      "parentId": 17,
+      "id": 18
+    },
+    {
+      "userId": 1,
+      "promotionId": 4,
+      "comment": "aaaaaa",
+      "parentId": 8,
+      "id": 19
+    },
+    {
+      "userId": 1,
+      "promotionId": 4,
+      "comment": "irra",
+      "id": 20
+    },
+    {
+      "userId": 1,
+      "promotionId": 4,
+      "comment": "uhuul",
+      "parentId": 20,
+      "id": 21
     }
   ],
   "users": [

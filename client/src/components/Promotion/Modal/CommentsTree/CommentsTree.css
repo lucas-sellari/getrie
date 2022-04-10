@@ -6,6 +6,7 @@
 
 .promotion-modal-comments-tree__item {
     display: flex;
+    margin-top: 20px;
 }
 
 .promotion-modal-comments-tree__item-avatar {
@@ -16,9 +17,33 @@
 }
 
 .promotion-modal-comments-tree__item-info p {
-    margin-top: 5px;
+    margin-top: 3px;
+    margin-bottom: 5px;
 }
 
 .promotion-modal-comments-tree__item-name {
     font-weight: 600;
+}
+
+.promotion-modal-comments-tree__answer-button {
+    margin-top: 0px;
+    background-color: transparent;
+    border: 0;
+    color: #3498db;
+    padding: 0;
+}
+
+.promotion-modal-comments-tree__comment-box {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+.promotion-modal-comments-tree__send-button {
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #3498db;
+    color: #3498db;
+    height: 28px;
+    margin-left: 15px;
 }
