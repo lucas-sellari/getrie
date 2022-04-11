@@ -19,7 +19,7 @@ const PromotionList = ({ loading, promotions, error }) => {
         <h1>Parece que tem algo de errado... 🤔</h1>
       </div>
     );
-  } else if (loading || promotions === null) {
+  } else if (promotions === null) {
     return (
       <div
         style={{
@@ -54,6 +54,15 @@ const PromotionList = ({ loading, promotions, error }) => {
             onClickComments={() => setPromotionId(promotion.id)}
           />
         ))}
+        {loading && (
+          <div
+            style={{
+              textAlign: "center",
+            }}
+          >
+            Carregando mais promoções...
+          </div>
+        )}
         {promotionId && (
           <PromotionModal
             promotionId={promotionId}
