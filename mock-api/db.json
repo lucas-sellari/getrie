@@ -41,6 +41,34 @@
       "imageUrl": "https://samsungbr.vtexassets.com/arquivos/ids/321255-800-auto?width=800&height=auto&aspect=true",
       "url": "https://shop.samsung.com/br/galaxy-watch4-lte-44mm/p",
       "id": 6
+    },
+    {
+      "title": "Smartphone Samsung Galaxy A23 128GB Preto 4G - Octa-Core 4GB RAM 6,6” Câm Quádrupla + Selfie 8MP",
+      "price": "1214.99",
+      "imageUrl": "https://a-static.mlcdn.com.br/618x463/smartphone-samsung-galaxy-a23-128gb-preto-4g-octa-core-4gb-ram-66-cam-quadrupla-selfie-8mp/magazineluiza/234749700/711a3a9c2fbe284521bef444baeaf5bc.jpg",
+      "url": "https://www.magazinevoce.com.br/magazinegatry/smartphone-samsung-galaxy-a23-128gb-preto-4g-octa-core-4gb-ram-66-cam-quadrupla-selfie-8mp/p/234749700/te/ga23/",
+      "id": 7
+    },
+    {
+      "title": "Notebook Lenovo Ultrafino IdeaPad 3i i5 8GB 256 GB SSD Linux 15.6\" 82BSS00200 ",
+      "price": "2852.78",
+      "imageUrl": "https://a-static.mlcdn.com.br/618x463/notebook-lenovo-ultrafino-ideapad-3i-i5-8gb-256-gb-ssd-linux-15-6-82bss00200/lenovooficial/82bss00200/da5d5c77e9cbfab60aba54afc0950dab.jpg",
+      "url": "https://www.magazinevoce.com.br/magazinegatry/notebook-lenovo-ultrafino-ideapad-3i-i5-8gb-256-gb-ssd-linux-156-82bss00200/p/hhgg6c1dfa/",
+      "id": 8
+    },
+    {
+      "title": "Ovo de Páscoa Sonho de Valsa ao Leite com Recheio na Casca 277g - Lacta",
+      "price": "29.99",
+      "imageUrl": "https://images-americanas.b2w.io/produtos/01/00/img/2893964/7/2893964711_1GG.jpg",
+      "url": "https://www.americanas.com.br/produto/2893964691",
+      "id": 9
+    },
+    {
+      "title": "Airfryer Conectada Com Alexa Philips Walita",
+      "price": "1599.92",
+      "imageUrl": "https://philips.vteximg.com.br/arquivos/ids/175298-500-500/1.jpg?v=637800998414500000",
+      "url": "https://www.loja.philips.com.br/airfryer-essential-xl-conectada-philips-walita---2000w-6895/p",
+      "id": 10
     }
   ],
   "comments": [
@@ -179,6 +207,24 @@
       "comment": "uhuul",
       "parentId": 20,
       "id": 21
+    },
+    {
+      "userId": 1,
+      "promotionId": 7,
+      "comment": "Parece que a promoção acabou :(",
+      "id": 22
+    },
+    {
+      "userId": 1,
+      "promotionId": 8,
+      "comment": "Roda lol?",
+      "id": 23
+    },
+    {
+      "userId": 1,
+      "promotionId": 10,
+      "comment": "Tek demais",
+      "id": 24
     }
   ],
   "users": [
