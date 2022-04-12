@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { SwapSpinner } from "react-spinners-kit";
+import { Formik, Form } from "formik";
+
 import useApi from "components/utils/useApi.js";
 import Field from "components/Form/Field/Field.js";
-import { Formik, Form } from "formik";
 import schema from "./Schema.js";
+import UIButton from "components/UI/Button/Button.js";
 import "./Form.css";
 
 const initialValue = {
@@ -88,7 +90,9 @@ const PromotionForm = ({ id }) => {
               </div>
 
               <div>
-                <button type="submit">Salvar</button>
+                <UIButton component="button" type="submit">
+                  Salvar
+                </UIButton>
               </div>
               {updateInfo.loading && (
                 <span

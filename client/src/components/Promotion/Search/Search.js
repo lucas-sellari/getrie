@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 
 import PromotionList from "../List/List.js";
 import useApi from "components/utils/useApi.js";
-import "./Search.css";
 import UIInfiniteScroll from "components/UI/InfiniteScroll/InfiniteScroll.js";
+import UIButton from "components/UI/Button/Button.js";
+import "./Search.css";
 
 const baseParams = {
   _embed: "comments",
@@ -62,9 +63,13 @@ const PromotionSearch = () => {
     <div className="promotion-search">
       <header className="promotion-search__header">
         <h1>PromoShow</h1>
-        <Link to="/create" className="promotion-search__button">
+        <UIButton
+          component={Link}
+          to="/create"
+          //theme="contained-green"
+        >
           Nova Promoção
-        </Link>
+        </UIButton>
       </header>
 
       <input

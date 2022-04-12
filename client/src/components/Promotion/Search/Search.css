@@ -11,14 +11,6 @@
     color: #888;
 }
 
-.promotion-search__button {
-    border: 1px solid #3498db;
-    border-radius: 4px;
-    color: #3498db;
-    text-decoration: none;
-    padding: 8px 10px;
-}
-
 .promotion-search__input {
     display: flex;
     height: 42px;
