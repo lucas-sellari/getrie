@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import UIButton from "components/UI/Button/Button.js";
 import "./Card.css";
 
 const PromotionCard = ({ promotion, onClickComments }) => {
@@ -27,20 +28,21 @@ const PromotionCard = ({ promotion, onClickComments }) => {
             {promotion.comments.length}{" "}
             {promotion.comments.length === 1 ? "Comentário" : "Comentários"}
           </button>
-          <a
+          <UIButton
+            component="a"
             href={promotion.url}
             target="_blank"
             rel="noreferrer noopener"
-            className="promotion-card__link"
           >
             IR PARA O SITE
-          </a>
-          <Link
+          </UIButton>
+          <UIButton
+            component={Link}
             to={`/edit/${promotion.id}`}
             className="promotion-card__edit-button"
           >
             Editar
-          </Link>
+          </UIButton>
         </footer>
       </div>
     </div>
