@@ -10,10 +10,10 @@
     "formik": "^2.2.9",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-icons": "^4.3.1",
     "react-router-dom": "6",
-    "react-scripts": "5.0.0",
+    "react-scripts": "^5.0.1",
     "react-spinners-kit": "^1.9.1",
-    "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },
   "scripts": {
@@ -39,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "web-vitals": "^2.1.4"
   }
 }

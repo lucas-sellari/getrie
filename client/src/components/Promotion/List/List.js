@@ -2,10 +2,15 @@ import React, { useState } from "react";
 import { SwapSpinner } from "react-spinners-kit";
 import PromotionCard from "../Card/Card.js";
 import PromotionModal from "../Modal/Modal.js";
+import useApi from "components/utils/useApi.js";
 import "./List.css";
 
-const PromotionList = ({ loading, promotions, error }) => {
+const PromotionList = ({ loading, promotions, error, refetch }) => {
   const [promotionId, setPromotionId] = useState(null);
+  const [deletePromotion, deletePromotionInfo] = useApi({
+    method: "delete",
+  });
+
   if (error) {
     return (
       <div
@@ -19,7 +24,7 @@ const PromotionList = ({ loading, promotions, error }) => {
         <h1>Parece que tem algo de errado... 🤔</h1>
       </div>
     );
-  } else if (promotions === null) {
+  } else if (promotions === null || deletePromotionInfo.loading) {
     return (
       <div
         style={{
@@ -52,6 +57,12 @@ const PromotionList = ({ loading, promotions, error }) => {
             key={promotion.id}
             promotion={promotion}
             onClickComments={() => setPromotionId(promotion.id)}
+            onClickDelete={async () => {
+              await deletePromotion({
+                url: `/promotions/${promotion.id}`,
+              });
+              refetch();
+            }}
           />
         ))}
         {loading && (

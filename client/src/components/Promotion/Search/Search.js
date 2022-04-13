@@ -11,7 +11,7 @@ const baseParams = {
   _embed: "comments",
   _order: "desc",
   _sort: "id",
-  _limit: 3,
+  _limit: 5,
 };
 
 const PromotionSearch = () => {
@@ -62,7 +62,7 @@ const PromotionSearch = () => {
   return (
     <div className="promotion-search">
       <header className="promotion-search__header">
-        <h1>PromoShow</h1>
+        <h1>Show de Promos na Getrie</h1>
         <UIButton
           component={Link}
           to="/create"
@@ -86,6 +86,11 @@ const PromotionSearch = () => {
         promotions={loadInfo.data}
         loading={loadInfo.loading}
         error={loadInfo.error}
+        refetch={() => {
+          load({
+            params: baseParams,
+          });
+        }}
       />
       {loadInfo.data &&
         !loadInfo.loading &&
