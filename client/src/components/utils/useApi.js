@@ -16,7 +16,7 @@ const useApi = (config) => {
     let response = null;
 
     const finalConfig = {
-      baseURL: "http://localhost:3333",
+      baseURL: process.env.REACT_APP_BASE_URL,
       updateRequestInfo: (newInfo) => newInfo,
       ...config,
       ...localConfig,
