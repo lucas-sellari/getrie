@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import UIModal from "components/UI/Modal/Modal.js";
 import PromotionModalCommentsTree from "./CommentsTree/CommentsTree.js";
+import UIButton from "components/UI/Button/Button.js";
 import useApi from "components/utils/useApi.js";
 import "./Modal.css";
 
@@ -68,9 +69,14 @@ const PromotionModal = ({ promotionId, onClickClose }) => {
           value={comment}
           disabled={sendCommentInfo.loading}
         />
-        <button type="submit" disabled={sendCommentInfo.loading}>
+        <UIButton
+          component="button"
+          type="submit"
+          disabled={sendCommentInfo.loading}
+          className="promotion-modal__comment-submit"
+        >
           {sendCommentInfo.loading ? "Enviando..." : "Enviar"}
-        </button>
+        </UIButton>
       </form>
 
       <PromotionModalCommentsTree
